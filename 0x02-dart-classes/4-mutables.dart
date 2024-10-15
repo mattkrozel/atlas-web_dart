@@ -15,4 +15,12 @@ class Password {
     // TODO: implement toString
     return 'Your Password is: ${_password}';
   }
+
+  String get password {
+    return _password ?? 'not set';
+  }
+
+  void set password(String input) {
+    this._password = input;
+  }
 }
